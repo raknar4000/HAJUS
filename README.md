@@ -11,8 +11,9 @@ See on tühi Laravel + vue app koos inertia ja vite'ga (Autentimine on juba kül
 * `composer install`
 * `npm install`
 * Seadista .env fail
-* `php artisan migrate`
+* `php artisan key:generate`
 * `php artisan config:clear`
+* `php artisan migrate`
 
 * `php artisan serve` - käivitab laravel'i
 * `npx vite` - käivitab vite
