@@ -4,7 +4,7 @@ Valmis töö(d) tuleb laadida zone'i ja kood githubi/gitlabi vms.
 
 # Template
 Kes soovib teha kõiki ülesandeid ühe projektina võib kasutada selle repo template'i.
-See on tühi Laravel + vue app koos inertia ja vite'ga (Audentimine on juba küljes).
+See on tühi Laravel + vue app koos inertia ja vite'ga (Autentimine on juba küljes).
 
 ## Template kasutamine
 * Tee projektist fork
@@ -39,7 +39,7 @@ Deployment
 
 ## 3. Laravel - projekti loomine Uudised. Kommentaaride CRUD
 * Luua project Blog
-* Luua audentimine
+* Luua autentimine
 * Luua migration create_blog_table (title, description)
 * CRUD blog-ile
 * Võimalus lisada kommentaare. Ning saab kustutada (admin).
