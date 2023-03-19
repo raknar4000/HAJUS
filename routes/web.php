@@ -1,8 +1,12 @@
 <?php
 
+use App\Http\Controllers\WeatherController;
+use App\Http\Controllers\MapsController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,4 +32,13 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+Route::get('/weather', [WeatherController::class, 'index']);
+
+Route::get('/map', [MapsController::class, 'index'])->name("map");
+Route::post('/map', [MapsController::class, 'store'])->name('add.marker');
+Route::post('/map/marker/{id}', [MapsController::class, 'update'])->name("update.marker");
+Route::get('/map/marker/{id}', [MapsController::class, 'show'])->name('edit.marker');
+Route::delete('/map/{id}', [MapsController::class, 'delete'])->name('delete.marker');
+
+
+require __DIR__.'/auth.php';    

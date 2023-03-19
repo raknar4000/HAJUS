@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "outDir": "resources/js/dist",
         "target": "esnext",
         "module": "esnext",
         "moduleResolution": "node",
@@ -8,6 +9,7 @@
         "sourceMap": true,
         "resolveJsonModule": true,
         "esModuleInterop": true,
+        "allowJs": true,
         "lib": [
             "esnext",
             "dom"
